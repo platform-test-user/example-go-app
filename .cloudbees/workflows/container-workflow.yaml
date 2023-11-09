@@ -6,9 +6,9 @@ on:
     branches:
       - "**"
 jobs:
-  build:
+  go-build:
     steps:
       - uses: docker://golang:1.20
-        name: Say hello
-        shell: sh bash
+        kind: build
         run: echo "hello world"
+        shell: sh
