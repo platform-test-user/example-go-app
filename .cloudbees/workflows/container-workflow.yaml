@@ -10,5 +10,5 @@ jobs:
     steps:
       - uses: docker://golang:1.20
         kind: build
-        run: echo "hello world"
+        run: echo "hello world "
         shell: sh
